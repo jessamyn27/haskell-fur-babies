@@ -1,0 +1,22 @@
+{
+  "name": "haskell-fur-babies",
+  "version": "1.0.0",
+  "description": "pet profiles for my fur babies",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello baby"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessamyn27/haskell-fur-babies.git"
+  },
+  "author": "jessamyn mctwigan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessamyn27/haskell-fur-babies/issues"
+  },
+  "homepage": "https://github.com/jessamyn27/haskell-fur-babies#readme",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}

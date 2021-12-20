@@ -1,22 +1,52 @@
-document.querySelector('button').addEventListener('click', function() {
-    // const icon = this.querySelector('i');
-    const text = this.querySelector('span');
+// document.querySelector('button').addEventListener('click', function() {
 
-    if (text.classList.contains('collapse')) {
-        text.classList.remove('collapse');
-        text.classList.add('expand');
-        text.innerHTML = 'expand_less';
-    } else {
-        text.classList.remove('expand');
-        text.classList.add('collapse');
-        text.innerHTML = 'expand_more';
-    }
-});
+
+// Using the event.target property together with the element.tagName property to find out which element triggered a specified event:
+
+
+
+
+// function myFunction(event) {
+//     var x = event.target;
+//     document.getElementById("demo").innerHTML = "Triggered by a " + x.tagName + " element";
+// }
+
+
+// function myFunction(e) {
+//     e.preventDefault();
+//     let x = e.target;
+//     if (x.innerHTML === 'expand_less') {
+//         x.innerHTML = 'expand_more';
+//     } else if ((x.querySelector = ('h2')) && (x.nextElementSibling.classList.contains('collapse'))) {
+//         x.nextElementSibling.classList.remove('collapse')
+//         x.nextElementSibling.classList.add('expand')
+//         x.nextElementSibling.innerHTML = 'expand_more';
+//     } else if ((x.querySelector = ('h2')) & (x.nextElementSibling.classList.contains('expand'))) {
+//         x.nextElementSibling.classList.remove('expand')
+//         x.nextElementSibling.classList.add('collapse')
+//         x.nextElementSibling.innerHTML = 'expand_less';
+//     } else {
+//         x.innerHTML = 'expand_more';
+
+//     }
+// const text = this.querySelector('span');
+
+// if (x.classList.contains('collapse')) {
+//     x.classList.remove('collapse');
+//     x.classList.add('expand');
+//     x.nextElementSibling.innerHTML = 'test 1';
+// } else {
+//     x.classList.remove('expand');
+//     x.classList.add('collapse');
+//     x.nextElementSibling.innerHTML = 'test 2';
+// }
+// };
 let coll = document.getElementsByClassName("collapsible");
 let i;
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
+
 
         let content = this.nextElementSibling;
         if (content.style.display === "block") {

@@ -1,3 +1,33 @@
+document.querySelector('button').addEventListener('click', function() {
+    // const icon = this.querySelector('i');
+    const text = this.querySelector('span');
+
+    if (text.classList.contains('collapse')) {
+        text.classList.remove('collapse');
+        text.classList.add('expand');
+        text.innerHTML = 'expand_less';
+    } else {
+        text.classList.remove('expand');
+        text.classList.add('collapse');
+        text.innerHTML = 'expand_more';
+    }
+});
+let coll = document.getElementsByClassName("collapsible");
+let i;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+
+    });
+}
+
 // const requestUrl = 'https://formsws-hilstaging-com-0adj9wt8gzyq.runscope.net/solar';
 
 // let btnEnter = document.querySelector("#form__btn-enter");

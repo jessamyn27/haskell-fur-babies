@@ -8,11 +8,11 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #c0d7ed;
-    background: linear-gradient(180deg, #e3cddf, #c0d7ed, #f1e398, #f58870, #e3cddf);
+    background: linear-gradient(180deg, #e3cddf, #c0d7ed, #f1e398, #e3cddf);
     background-size: 1000% 1000%;
-    -webkit-animation: AnimationName 100s ease-in-out infinite;
-    -moz-animation: AnimationName 100s ease-in-out infinite;
-    animation: AnimationName 100s ease-in-out infinite;
+    -webkit-animation: AnimationName 300s ease-in-out infinite;
+    -moz-animation: AnimationName 300s ease-in-out infinite;
+    animation: AnimationName 300s ease-in-out infinite;
     display: flex;
 }
 
@@ -26,6 +26,61 @@ body {
     box-sizing: border-box;
     margin: auto;
     justify-content: center;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+    background: none;
+    color: #444;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    &:active,
+    &:hover {
+        box-shadow: none;
+    }
+    .material-icons {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    span,
+    h2 {
+        line-height: 1.4;
+        color: #557ec9;
+        font-size: 30px;
+        &:active,
+        &:focus {
+            box-shadow: 0 0 8px rgb(142, 186, 223);
+        }
+    }
+}
+
+.subtitle {
+    background: none;
+    font-size: 26px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+// .active,
+// .collapsible:hover {
+//     background-color: #ccc;
+// }
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    // background-color: #c5e3f5;
 }
 
 h1 {
@@ -75,11 +130,11 @@ header {
     padding-top: 50px;
     background-color: #e3cddf;
     color: #80afdf;
-    background: linear-gradient(179deg, #e3cddf, #b9c8d6, #f1e398);
+    background: linear-gradient(179deg, #f1e398, #e3cddf, #b9c8d6, #f1e398);
     background-size: 600% 600%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    -webkit-animation: AnimationName 200s ease infinite;
+    -moz-animation: AnimationName 200s ease infinite;
+    animation: AnimationName 200s ease infinite;
 }
 
 h1 {
@@ -175,6 +230,10 @@ main {
     width: 100%;
     border: 15px solid rgba(142, 186, 223, .25);
     height: 83%;
+}
+
+section {
+    background-color: rgba(164, 203, 235, 0.25);
 }
 
 section>section {

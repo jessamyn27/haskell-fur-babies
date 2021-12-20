@@ -13,11 +13,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #c0d7ed;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e3cddf), color-stop(#c0d7ed), color-stop(#f1e398), color-stop(#f58870), to(#e3cddf));
-  background: linear-gradient(180deg, #e3cddf, #c0d7ed, #f1e398, #f58870, #e3cddf);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e3cddf), color-stop(#c0d7ed), color-stop(#f1e398), to(#e3cddf));
+  background: linear-gradient(180deg, #e3cddf, #c0d7ed, #f1e398, #e3cddf);
   background-size: 1000% 1000%;
-  -webkit-animation: AnimationName 100s ease-in-out infinite;
-  animation: AnimationName 100s ease-in-out infinite;
+  -webkit-animation: AnimationName 300s ease-in-out infinite;
+  animation: AnimationName 300s ease-in-out infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +41,56 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background: none;
+  color: #444;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:active, .collapsible:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.collapsible .material-icons {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.collapsible span,
+.collapsible h2 {
+  line-height: 1.4;
+  color: #557ec9;
+  font-size: 30px;
+}
+
+.collapsible span:active, .collapsible span:focus,
+.collapsible h2:active,
+.collapsible h2:focus {
+  -webkit-box-shadow: 0 0 8px #8ebadf;
+          box-shadow: 0 0 8px #8ebadf;
+}
+
+.subtitle {
+  background: none;
+  font-size: 26px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
 }
 
 h1 {
@@ -94,10 +144,10 @@ header {
   padding-top: 50px;
   background-color: #e3cddf;
   color: #80afdf;
-  background: linear-gradient(179deg, #e3cddf, #b9c8d6, #f1e398);
+  background: linear-gradient(179deg, #f1e398, #e3cddf, #b9c8d6, #f1e398);
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: AnimationName 200s ease infinite;
+  animation: AnimationName 200s ease infinite;
 }
 
 h1 {
@@ -201,6 +251,10 @@ main {
   width: 100%;
   border: 15px solid rgba(142, 186, 223, 0.25);
   height: 83%;
+}
+
+section {
+  background-color: rgba(164, 203, 235, 0.25);
 }
 
 section > section {
